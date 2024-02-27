@@ -48,7 +48,39 @@ public class SolutionLongestSubstringWithoutRepeatingCharacters
         }
 
         return maxLength;
+    }
+}
 
+public class OfficialSolutionLongestSubstringWithoutRepeatingCharacters
+{
+    public int LengthOfLongestSubstring(string s)
+    {
+        var startIndex = 0;
+        var endIndex = 0;
+        var set = new HashSet<char>();
+        var maxLength = 0;
 
+        while (endIndex < s.Length)
+        {
+            var currentChar = s[endIndex];
+            if (set.Contains(currentChar))
+            {
+                var currentLength = endIndex - startIndex;
+                if (currentLength > maxLength)
+                {
+                    maxLength = currentLength;
+                }
+
+                set.Remove(s[startIndex]);
+                startIndex++;
+            }
+            else
+            {
+                set.Add(currentChar);
+                endIndex++;
+            }
+        }
+
+        return Math.Max(endIndex - startIndex, maxLength);
     }
 }

@@ -4,12 +4,12 @@ namespace Tests;
 
 public class TestsLongestSubstringWithoutRepeatingCharacters
 {
-    public SolutionLongestSubstringWithoutRepeatingCharacters Solution { get; private set; }
+    public OfficialSolutionLongestSubstringWithoutRepeatingCharacters Solution { get; private set; }
 
     [SetUp]
     public void Setup()
     {
-        this.Solution = new SolutionLongestSubstringWithoutRepeatingCharacters();
+        this.Solution = new();
     }
 
     [Test]
