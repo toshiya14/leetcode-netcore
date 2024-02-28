@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace LeetCode;
-public class Solution
+public class SolutionAddTwoNumbers
 {
 
 }
