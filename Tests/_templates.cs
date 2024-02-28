@@ -2,9 +2,9 @@ using LeetCode;
 
 namespace Tests;
 
-public class Tests
+public class Tests__name__
 {
-    public Solution Solution { get; private set; }
+    public Solution__name__ Solution { get; private set; }
 
     [SetUp]
     public void Setup()

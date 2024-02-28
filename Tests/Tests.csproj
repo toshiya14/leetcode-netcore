@@ -10,21 +10,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="_template.cs" />
+    <Compile Remove="_templates.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="data\02680_00.txt" />
+    <None Remove="data\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="data\02680_00.txt">
+    <Content Include="data\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="_template.cs" />
+    <None Include="_templates.cs" />
   </ItemGroup>
 
   <ItemGroup>
