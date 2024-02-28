@@ -14,6 +14,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="data\02680_00.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="data\02680_00.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="_template.cs" />
   </ItemGroup>
 
