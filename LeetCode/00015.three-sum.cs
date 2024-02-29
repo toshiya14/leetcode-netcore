@@ -34,19 +34,19 @@ public class SolutionThreeSum
 
                 if (sum == 0)
                 {
-                    Console.WriteLine($"Find: {sorted[i]} {sorted[left]} {sorted[right]}");
+                    //Console.WriteLine($"Find: {sorted[i]} {sorted[left]} {sorted[right]}");
                     result.Add(new[] { sorted[i], sorted[left], sorted[right] });
 
                     while (left < sorted.Length - 1 && sorted[left] == sorted[left + 1])
                     {
-                        Console.WriteLine($"Skipped: {left}: {sorted[left]}");
+                        //Console.WriteLine($"Skipped: {left}: {sorted[left]}");
                         left++;
                     }
                     left++;
 
                     while (right > 1 && sorted[right] == sorted[right - 1])
                     {
-                        Console.WriteLine($"Skipped: {right}: {sorted[right]}");
+                        //Console.WriteLine($"Skipped: {right}: {sorted[right]}");
                         right--;
                     }
                     right--;
