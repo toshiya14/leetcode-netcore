@@ -17,7 +17,7 @@ public class SolutionMinimumLimitOfBallsInABag
         {
             var mid = (left + right) / 2;
             var steps = CountOperation(nums, mid);
-            Console.WriteLine($"left={left}, right={right}, mid={mid}, steps={steps}");
+            //Console.WriteLine($"left={left}, right={right}, mid={mid}, steps={steps}");
 
             if (left == right)
             {
