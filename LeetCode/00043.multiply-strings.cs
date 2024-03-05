@@ -9,7 +9,7 @@ public class SolutionMultiplyStrings
 {
     public string Multiply(string num1, string num2)
     {
-        Console.WriteLine($"{num1} x {num2}");
+        //Console.WriteLine($"{num1} x {num2}");
         var result = new int[num1.Length + num2.Length];
         for (var i = 0; i < num1.Length; i++)
         {
@@ -44,7 +44,7 @@ public class SolutionMultiplyStrings
         var stack = new Stack<int>();
         foreach (var d in result)
         {
-            Console.WriteLine($"push: {d}");
+            //Console.WriteLine($"push: {d}");
             stack.Push(d);
         }
         var sb = new StringBuilder(result.Length);
