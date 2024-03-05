@@ -39,7 +39,7 @@ public class SolutionInsertInterval
             end--;
         }
 
-        Console.WriteLine($"Selected: {string.Join(',', intervals[start..(end + 1)].Select(x => $"({x[0]},{x[1]})"))}");
+        //Console.WriteLine($"Selected: {string.Join(',', intervals[start..(end + 1)].Select(x => $"({x[0]},{x[1]})"))}");
 
         if (end < start)
         {
